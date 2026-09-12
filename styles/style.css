@@ -22,7 +22,7 @@ h1 {
 h2 {
   font-size: var(--font-size-h2);
   font-weight: 700;
-  color: var(--accent-color);
+  color: var(--section-title-color);
 }
 
 h3 {
@@ -60,7 +60,7 @@ a:focus-visible {
   position: absolute;
   inline-size: 25px;
   block-size: 25px;
-  border: 1px solid var(--accent-color);
+  border: 1px solid var(--section-title-color);
 }
 
 .decorated-zone::before {
@@ -329,11 +329,24 @@ a:focus-visible {
     gap: 20px;
   }
 
-  .gallery__item:nth-child(1) { grid-area: sunset; }
-  .gallery__item:nth-child(2) { grid-area: icecream; }
-  .gallery__item:nth-child(3) { grid-area: tape; }
-  .gallery__item:nth-child(4) { grid-area: books; }
-  .gallery__item:nth-child(5) { grid-area: street; }
+  .gallery__item:nth-child(1) {
+    grid-area: sunset;
+  }
+
+  .gallery__item:nth-child(2) {
+    grid-area: icecream; }
+
+  .gallery__item:nth-child(3) {
+    grid-area: tape;
+  }
+
+  .gallery__item:nth-child(4) {
+    grid-area: books;
+  }
+
+  .gallery__item:nth-child(5) {
+    grid-area: street;
+  }
 
   .gallery__image {
     display: block;

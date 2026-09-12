@@ -8,6 +8,7 @@
   --bg-color: #fff1f7;
   --text-color: #353430;
   --headers-color: #353430;
+  --section-title-color: #353430; 
   --accent-color: #FF8DCB;
   --hero-color: #ffc2e6;
   --shadow-color: #ff8dcb;
@@ -23,6 +24,7 @@
     --bg-color: #000028;
     --text-color: #f1b2ce;
     --headers-color: #000028;
+    --section-title-color: #FF0070; 
     --accent-color: #ff0070;
     --hero-color: #db00ff;
     --shadow-color: #ff0070;
