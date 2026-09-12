@@ -11,11 +11,11 @@
   flex-direction: column;
   gap: 40px;
   line-height: 23.4px;
-  letter-spacing: -0.1px;
+  letter-spacing: -0.38px;
 }
 
 h1 {
-  font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
+  font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
   font-weight: 700;
 }
 
@@ -48,7 +48,7 @@ a:focus-visible {
   position: relative;
   display: grid;
   grid-template-rows: auto minmax(auto, max-content) 1fr;
-  gap: 55px;
+  gap: 53px;
   min-block-size: 668px;
   block-size: 100vh;
   padding: 10px;
@@ -129,6 +129,7 @@ a:focus-visible {
   cursor: pointer;
   text-transform: lowercase;
   padding: 1.5px 12px;
+  letter-spacing: 0.5px;
 }
 
 .header__theme-menu-button:hover {
@@ -153,8 +154,8 @@ a:focus-visible {
   text-transform: lowercase;
   text-shadow: 4px 4px 0 var(--accent-color);
   align-self: center;
-  margin-block-start: 10px;
-  font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+  margin-block-start: 14px;
+  letter-spacing: -.1px;
 }
 
 .header__subtitle {
@@ -178,6 +179,12 @@ a:focus-visible {
 .section {
   display: grid;
   gap: 20px;
+}
+
+.section__content {
+  display: grid;
+  gap: 20px;
+  align-content: start;
 }
 
 .section__cards {
@@ -222,6 +229,10 @@ a:focus-visible {
   font-weight: 400;
 }
 
+.section_type_gallery {
+  gap: 10px;
+}
+
 .gallery {
   display: grid;
   gap: 10px;
@@ -245,7 +256,6 @@ a:focus-visible {
 
 .footer__title {
   color: var(--hero-color);
-  font-size: 116px;
   font-weight: 700;
   line-height: 0.825;
   text-shadow: 2px 2px 0 var(--shadow-color);
@@ -254,13 +264,16 @@ a:focus-visible {
 @media (min-width: 768px) {
   .page {
     gap: 60px;
-    letter-spacing: -0.3px;
+  }
+
+  h1 {
+    font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
   }
 
   .header {
     min-block-size: 1024px;
     padding: 20px;
-    gap: 162px;
+    gap: 161px;
   }
 
   .decorated-zone::before {
@@ -279,11 +292,11 @@ a:focus-visible {
   }
 
   .header__theme-menu {
-    margin-block-start: 172px;
+    margin-block-start: 168px;
   }
 
   .header__title {
-    margin-block-start: 9px;
+    margin-block-start: 11px;
     margin-inline-start: -20px;
   }
 
@@ -300,6 +313,7 @@ a:focus-visible {
   .section_type_questions {
     grid-template-columns: 1fr 2fr;
     align-items: start;
+    gap: 20px;
   }
 
   .section_type_reasons .section__title {
@@ -308,14 +322,12 @@ a:focus-visible {
 
   .section_type_advice {
     grid-template-columns: 1fr 2fr;
-    gap: 10px;
+    gap: 20px;
     align-items: start;
   }
 
-  .section__content {
-    display: grid;
+  .section_type_gallery {
     gap: 20px;
-    align-content: start;
   }
 
   .gallery {
@@ -334,7 +346,8 @@ a:focus-visible {
   }
 
   .gallery__item:nth-child(2) {
-    grid-area: icecream; }
+    grid-area: icecream;
+  }
 
   .gallery__item:nth-child(3) {
     grid-area: tape;
@@ -356,19 +369,18 @@ a:focus-visible {
   }
 
   .footer {
-    place-items: center;
     padding: 20px;
     min-block-size: 1024px;
-  }
-
-  .footer__title {
-    align-self: center;
   }
 }
 
 @media (min-width: 1024px) {
   .page {
-    letter-spacing: -0.45px;
+    letter-spacing: -0.4px;
+  }
+
+  h1 {
+    font-size: 157px;
   }
 
   .header {
@@ -389,8 +401,15 @@ a:focus-visible {
   }
 
   .header__title {
-    font-size: 157px;
     margin-block-start: 159px;
+  }
+
+  .section_type_questions {
+    gap: 10px;
+  }
+
+  .section_type_advice {
+    gap: 10px;
   }
 
   .section_type_reasons .section__cards {
@@ -402,6 +421,6 @@ a:focus-visible {
   }
 
   .footer__title {
-    font-size: 157px;
+    letter-spacing: -0.5px;
   }
 }
