@@ -12,3 +12,20 @@
   --button-hover-border-color: #ff007066;
   --link-underline-color: #f1b2ce;
 }
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg-image: url('../images/cover-image-dark.png');
+    --bg-color: #000028;
+    --text-color: #f1b2ce;
+    --headers-color: #000028;
+    --section-title-color: #FF0070; 
+    --accent-color: #ff0070;
+    --hero-color: #db00ff;
+    --shadow-color: #ff0070;
+    --button-border-color: #ff0070;
+    --button-text-color: #FF0070;
+    --button-hover-border-color: #ff007066;
+    --link-underline-color: #f1b2ce;
+  }
+}
